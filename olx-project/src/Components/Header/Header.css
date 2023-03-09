@@ -110,6 +110,9 @@
     cursor: pointer;
     font-weight: bold;
   }
+  .login-btn{
+    cursor: pointer;
+  }
   
   .loginPage hr {
     margin: 0;
@@ -119,6 +122,7 @@
   
   .loginPage a{
     text-decoration: none;
+    
     
   }
 

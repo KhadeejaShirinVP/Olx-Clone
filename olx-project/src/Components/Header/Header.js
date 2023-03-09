@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 import OlxLogo from '../../assets/OlxLogo';
 import Search from '../../assets/Search';
@@ -40,7 +40,8 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span> { user ? `Welcome ${user.displayName}`: 'Login'}</span>
+          {/* <span> { user ? `Welcome ${user.displayName}`:  `Login`}</span> */}
+          <span> { user ? `Welcome ${user.displayName}`:  <useNavigate className="login-btn" onClick={()=>{navigate('/login')}}>Login</useNavigate>}</span>
           <hr />
 
         </div>
